@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "main_icon.png",
+      "filename" : "Sireen_Logo_Icon_Transparent 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Sireen_Logo_Icon_Transparent.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Sireen_Logo_Icon_Transparent 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
