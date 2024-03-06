@@ -33,6 +33,7 @@
 		5BC335B32B0067E100694E29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC335B22B0067E100694E29 /* ProfileViewController.swift */; };
 		5BC335B62B0070F900694E29 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC335B52B0070F900694E29 /* AddPetViewController.swift */; };
 		5BC335B82B0075E700694E29 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC335B72B0075E700694E29 /* MapViewController.swift */; };
+		A3B4F30E2B9665170079F230 /* DashboardVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4F30D2B9665170079F230 /* DashboardVIewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		5BC335B22B0067E100694E29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5BC335B52B0070F900694E29 /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 		5BC335B72B0075E700694E29 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A3B4F30D2B9665170079F230 /* DashboardVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVIewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				5B7A9FF02B030BFE00A2F548 /* Comments */,
 				5BC335B42B0070D900694E29 /* Profile */,
 				5BC335B72B0075E700694E29 /* MapViewController.swift */,
+				A3B4F30D2B9665170079F230 /* DashboardVIewController.swift */,
 				5B7517B72AF039A000F8C387 /* Assets.xcassets */,
 				5B5A3DE02AF7F4F600AC84D2 /* Main.storyboard */,
 				5B7517B92AF039A000F8C387 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				5B7517AF2AF0399E00F8C387 /* AppDelegate.swift in Sources */,
 				5B7A9FEF2B030BF300A2F548 /* Comment.swift in Sources */,
 				5B5A3DDB2AF7F49500AC84D2 /* SignUpViewController.swift in Sources */,
+				A3B4F30E2B9665170079F230 /* DashboardVIewController.swift in Sources */,
 				5B7517B12AF0399E00F8C387 /* SceneDelegate.swift in Sources */,
 				5B7A9FF42B030BFE00A2F548 /* CommentsViewController.swift in Sources */,
 				5B5A3DD72AF7F48900AC84D2 /* PostCell.swift in Sources */,
