@@ -10,8 +10,8 @@ import MapKit
 import ParseSwift
 
 class MapViewController: UIViewController, MKMapViewDelegate {
-    @IBOutlet weak var mapView: MKMapView!
 
+    @IBOutlet weak var mapView: MKMapView!
     private var posts = [Post]() {
         didSet {
             DispatchQueue.main.async {

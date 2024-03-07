@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  PawsAndFound
+//  lab-insta-parse
 //
-//  Created by Jose Baez on 10/30/23.
+//  Created by Charlie Hieger on 10/29/22.
 //
 
 import UIKit
@@ -11,8 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private enum Constants {
         static let loginNavigationControllerIdentifier = "LoginNavigationController"
-        static let homeControllerIdentifier =  "HomePage"
-            //static let homeControllerIdentifier =  "TabBarController"
+        static let feedNavigationControllerIdentifier = "NavigationController"
+        //static let feedNavigationControllerIdentifier = "Dashboard"
         static let storyboardIdentifier = "Main"
     }
 
@@ -42,10 +42,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func login() {
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.homeControllerIdentifier)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.feedNavigationControllerIdentifier)
     }
 
     private func logOut() {
+        // TODO: Pt 1 - Log out Parse user.
         // This will also remove the session from the Keychain, log out of linked services and all future calls to current will return nil.
         User.logout { [weak self] result in
 
@@ -98,5 +99,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 }
-
 
