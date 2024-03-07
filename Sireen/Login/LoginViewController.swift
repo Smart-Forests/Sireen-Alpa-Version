@@ -1,18 +1,19 @@
 //
 //  LoginViewController.swift
-//  BeReal
+//  lab-insta-parse
 //
-//  Created by Jose Baez on 10/11/23.
+//  Created by Charlie Hieger on 10/29/22.
 //
 
 import UIKit
+
+// TODO: Pt 1 - Import Parse Swift
 import ParseSwift
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -53,3 +54,4 @@ class LoginViewController: UIViewController {
         present(alertController, animated: true)
     }
 }
+
