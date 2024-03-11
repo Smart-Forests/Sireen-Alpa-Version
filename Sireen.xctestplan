@@ -11,7 +11,7 @@
   "defaultOptions" : {
     "codeCoverage" : false,
     "locationScenario" : {
-      "identifier" : "Tokyo, Japan",
+      "identifier" : "Hong Kong, China",
       "referenceType" : "built-in"
     },
     "targetForVariableExpansion" : {
