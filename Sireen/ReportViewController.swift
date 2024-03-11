@@ -8,10 +8,10 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-    
-    let circleFlag = false
+class ReportViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
+    let circleFlag = false
+    
     @IBOutlet weak var mapView: MKMapView!
     
     fileprivate let locationManager: CLLocationManager = CLLocationManager()
@@ -42,6 +42,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             circleRenderer.fillColor = .blue.withAlphaComponent(0.1)
             return circleRenderer
         }
+    
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let latestLocation = locations.first else { return }
@@ -50,6 +51,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             let region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
             mapView.setRegion(region, animated: true)
         }
+    
     
     
 }

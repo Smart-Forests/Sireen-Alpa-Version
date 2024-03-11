@@ -2,9 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hot-nK-RXH">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,7 +57,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAU-Ud-dn0">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAU-Ud-dn0">
                                                 <rect key="frame" x="0.0" y="165" width="320" height="50"/>
                                                 <color key="backgroundColor" red="0.59215686274509804" green="0.73725490196078436" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -194,7 +196,7 @@
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -205,7 +207,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-ag-gPv">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-ag-gPv">
                                                 <rect key="frame" x="0.0" y="197" width="382" height="50"/>
                                                 <color key="backgroundColor" red="0.59215688710000003" green="0.73725497719999999" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -213,7 +215,7 @@
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -224,7 +226,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-Cf-yEI">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-Cf-yEI">
                                                 <rect key="frame" x="0.0" y="293" width="382" height="50"/>
                                                 <color key="backgroundColor" red="0.59215688710000003" green="0.73725497719999999" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -232,7 +234,7 @@
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -243,7 +245,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date of birth" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mzr-pf-wV3">
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mzr-pf-wV3">
                                                 <rect key="frame" x="0.0" y="389" width="382" height="50"/>
                                                 <color key="backgroundColor" red="0.59215688710000003" green="0.73725497719999999" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -251,7 +253,7 @@
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="join"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -314,27 +316,6 @@
         <!--Dashboard-->
         <scene sceneID="6PA-G8-1C0">
             <objects>
-                <tapGestureRecognizer id="P5t-J6-cUW">
-                    <connections>
-                        <segue destination="EHQ-3G-z4G" kind="show" identifier="mapSegue" id="tEo-se-uuj"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Hyz-Ww-0Pg">
-                    <connections>
-                        <segue destination="Mzn-jh-9Sm" kind="show" identifier="reportSegue" id="FqH-Mk-NQz"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="vh7-q6-UlM">
-                    <connections>
-                        <segue destination="X14-QS-XHQ" kind="show" identifier="scoreSegue" id="mFN-XG-JoU"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhu-or-mJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="gFF-Rq-qyz">
-                    <connections>
-                        <segue destination="jpa-wR-lNr" kind="show" identifier="learnSegue" animates="NO" id="8ht-wn-I4W"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController storyboardIdentifier="Dashboard" title="Dashboard" id="dI9-5p-O8d" customClass="DashboardViewController" customModule="Sireen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jNJ-ql-U1x">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -579,8 +560,29 @@
                         <outlet property="scoreView" destination="8f1-Be-I9F" id="N7P-c0-JtN"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="P5t-J6-cUW">
+                    <connections>
+                        <segue destination="EHQ-3G-z4G" kind="show" identifier="mapSegue" id="tEo-se-uuj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Hyz-Ww-0Pg">
+                    <connections>
+                        <segue destination="6kd-ov-2ca" kind="show" id="7af-JH-TL0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vh7-q6-UlM">
+                    <connections>
+                        <segue destination="X14-QS-XHQ" kind="show" identifier="scoreSegue" id="mFN-XG-JoU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhu-or-mJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gFF-Rq-qyz">
+                    <connections>
+                        <segue destination="jpa-wR-lNr" kind="show" identifier="learnSegue" id="8ht-wn-I4W"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2645.5813953488373" y="819.52789699570826"/>
+            <point key="canvasLocation" x="2604" y="847"/>
         </scene>
         <!--Learn-->
         <scene sceneID="t7D-xZ-xHH">
@@ -690,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vu0-h1-xZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3933.4883720930234" y="1077.6824034334766"/>
+            <point key="canvasLocation" x="3945" y="1231"/>
         </scene>
         <!--Score-->
         <scene sceneID="tbz-xD-qGz">
@@ -734,12 +736,92 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ad5-Ng-CS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3035" y="1784"/>
+            <point key="canvasLocation" x="3945" y="1905"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="CeJ-wx-zTa">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="6kd-ov-2ca" customClass="ReportViewController" customModule="Sireen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Kx-40-6m9">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73k-F9-LeN">
+                                <rect key="frame" x="0.0" y="-27" width="430" height="128"/>
+                                <color key="backgroundColor" red="0.2470588088" green="0.14509806040000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Xk0-U8-ENT"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="MmL-k2-ix4">
+                                <rect key="frame" x="0.0" y="134" width="430" height="724.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DG-iU-hgW">
+                                        <rect key="frame" x="109" y="0.0" width="212" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zFm-BV-Kt4">
+                                        <rect key="frame" x="0.0" y="38.333333333333371" width="430" height="590"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <standardMapConfiguration key="preferredConfiguration"/>
+                                    </mapView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What activity are you reporting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWM-z9-Vnt">
+                                        <rect key="frame" x="98" y="641.33333333333337" width="234" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NP-Yh-H5q">
+                                        <rect key="frame" x="37.666666666666657" y="674.66666666666663" width="355" height="50"/>
+                                        <color key="backgroundColor" red="0.2470588088" green="0.14509806040000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="355" id="0dX-zM-WUj"/>
+                                            <constraint firstAttribute="height" constant="50" id="2if-t6-Plt"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Select: Forest Fire">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zFm-BV-Kt4" secondAttribute="trailing" id="LXB-r5-s08"/>
+                                    <constraint firstItem="zFm-BV-Kt4" firstAttribute="leading" secondItem="MmL-k2-ix4" secondAttribute="leading" id="Mi1-Wm-fng"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DMM-h1-okH"/>
+                        <color key="backgroundColor" red="0.32549020649999999" green="0.53725492949999998" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="73k-F9-LeN" firstAttribute="leading" secondItem="MmL-k2-ix4" secondAttribute="leading" id="0I0-3p-1w9"/>
+                            <constraint firstItem="DMM-h1-okH" firstAttribute="trailing" secondItem="MmL-k2-ix4" secondAttribute="trailing" id="DlL-E0-r3I"/>
+                            <constraint firstItem="73k-F9-LeN" firstAttribute="trailing" secondItem="MmL-k2-ix4" secondAttribute="trailing" id="IzD-bW-bN9"/>
+                            <constraint firstItem="MmL-k2-ix4" firstAttribute="top" secondItem="73k-F9-LeN" secondAttribute="bottom" constant="33" id="gC0-f7-soB"/>
+                            <constraint firstItem="MmL-k2-ix4" firstAttribute="leading" secondItem="DMM-h1-okH" secondAttribute="leading" id="l0l-cC-pC3"/>
+                            <constraint firstItem="DMM-h1-okH" firstAttribute="bottom" secondItem="MmL-k2-ix4" secondAttribute="bottom" constant="39.329999999999998" id="oih-AY-xzo"/>
+                            <constraint firstItem="MmL-k2-ix4" firstAttribute="top" secondItem="DMM-h1-okH" secondAttribute="top" constant="31" id="qb1-Va-0nH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Report" style="editor" id="d4q-PZ-5Zk"/>
+                    <connections>
+                        <outlet property="mapView" destination="zFm-BV-Kt4" id="fiM-B8-SbN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jma-vH-KFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3945" y="572"/>
         </scene>
         <!--Map-->
         <scene sceneID="cwP-dK-ajs">
             <objects>
-                <viewController storyboardIdentifier="mapViewControeller" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="EHQ-3G-z4G" customClass="MapViewController" customModule="Sireen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="EHQ-3G-z4G" customClass="MapViewController" customModule="Sireen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dI3-xE-ZPt">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -760,8 +842,9 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iut-DF-Ax0">
-                                        <rect key="frame" x="0.66666666666665719" y="38.333333333333371" width="429" height="590"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-6Z-pdu">
+                                        <rect key="frame" x="0.0" y="38.333333333333371" width="430" height="590"/>
+                                        <color key="tintColor" name="AccentColor"/>
                                         <standardMapConfiguration key="preferredConfiguration"/>
                                     </mapView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about this alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nec-fZ-RbL">
@@ -788,6 +871,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ktr-6Z-pdu" secondAttribute="trailing" id="Qa1-M2-hjR"/>
+                                    <constraint firstItem="ktr-6Z-pdu" firstAttribute="leading" secondItem="PuT-3H-EPU" secondAttribute="leading" id="qII-Q0-VR0"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ii-lp-u9T"/>
@@ -804,12 +891,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Map" style="editor" id="FUg-JM-dbC"/>
                     <connections>
-                        <outlet property="mapView" destination="iut-DF-Ax0" id="BRU-76-Xn3"/>
+                        <outlet property="mapView" destination="ktr-6Z-pdu" id="BeG-7X-2VI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOS-YR-7eR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3933" y="-277"/>
+            <point key="canvasLocation" x="3945" y="-104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pPO-Vv-xve">
@@ -831,76 +918,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJE-SU-oh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="255" y="-2"/>
-        </scene>
-        <!--Report-->
-        <scene sceneID="a8p-15-r2r">
-            <objects>
-                <viewController storyboardIdentifier="reportViewController" modalPresentationStyle="fullScreen" id="Mzn-jh-9Sm" customClass="ReportViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qG8-I3-8sf">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TX-Pi-DjZ">
-                                <rect key="frame" x="0.0" y="-27" width="430" height="128"/>
-                                <color key="backgroundColor" red="0.2470588088" green="0.14509806040000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="fGr-qg-gGs"/>
-                                </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="zNw-L0-j6Z" customClass="ReportViewController">
-                                <rect key="frame" x="0.0" y="134" width="430" height="724.66666666666663"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kw-3p-75T">
-                                        <rect key="frame" x="109" y="0.0" width="212" height="25.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVs-vb-LsA">
-                                        <rect key="frame" x="0.66666666666665719" y="38.333333333333371" width="429" height="590"/>
-                                        <standardMapConfiguration key="preferredConfiguration"/>
-                                    </mapView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What activity are you reporting?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpG-2M-wcj">
-                                        <rect key="frame" x="94.000000000000014" y="641.33333333333337" width="242.33333333333337" height="20.333333333333371"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT8-5E-Xct">
-                                        <rect key="frame" x="37.666666666666657" y="674.66666666666663" width="355" height="50"/>
-                                        <color key="backgroundColor" red="0.2470588088" green="0.14509806040000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="9A9-VX-cza"/>
-                                            <constraint firstAttribute="width" constant="355" id="r5g-JD-OZL"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Select: Forest FIre"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="l7T-j1-iPb"/>
-                        <color key="backgroundColor" red="0.32549020649999999" green="0.53725492949999998" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="l7T-j1-iPb" firstAttribute="trailing" secondItem="zNw-L0-j6Z" secondAttribute="trailing" id="6h9-nW-stX"/>
-                            <constraint firstItem="zNw-L0-j6Z" firstAttribute="top" secondItem="7TX-Pi-DjZ" secondAttribute="bottom" constant="33" id="F9W-7u-19B"/>
-                            <constraint firstItem="7TX-Pi-DjZ" firstAttribute="trailing" secondItem="zNw-L0-j6Z" secondAttribute="trailing" id="IOV-4D-Rya"/>
-                            <constraint firstItem="7TX-Pi-DjZ" firstAttribute="leading" secondItem="zNw-L0-j6Z" secondAttribute="leading" id="Soy-0I-xyP"/>
-                            <constraint firstItem="l7T-j1-iPb" firstAttribute="bottom" secondItem="zNw-L0-j6Z" secondAttribute="bottom" constant="39.329999999999998" id="VjM-m7-h3u"/>
-                            <constraint firstItem="zNw-L0-j6Z" firstAttribute="leading" secondItem="l7T-j1-iPb" secondAttribute="leading" id="n8p-UA-TY7"/>
-                            <constraint firstItem="zNw-L0-j6Z" firstAttribute="top" secondItem="l7T-j1-iPb" secondAttribute="top" constant="31" id="yw4-Xp-2Zb"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Report" style="editor" id="2a2-fh-L9T"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xz6-SG-5pJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3933.4883720930234" y="393.99141630901289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nxC-9y-a1W">
@@ -934,5 +951,8 @@
         <image name="mappin.and.ellipse" catalog="system" width="110" height="128"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
