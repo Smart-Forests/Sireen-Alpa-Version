@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "5E2484D7-805A-4521-BFE3-CC1F83BC9BAE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "locationScenario" : {
+      "identifier" : "Tokyo, Japan",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Sireen.xcodeproj",
+      "identifier" : "5B7517AA2AF0399E00F8C387",
+      "name" : "Sireen"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
