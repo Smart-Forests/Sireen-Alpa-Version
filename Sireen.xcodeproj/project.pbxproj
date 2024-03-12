@@ -109,7 +109,7 @@
 				5B5A3DD82AF7F49500AC84D2 /* Login */,
 				5BC335B72B0075E700694E29 /* MapViewController.swift */,
 				A3B4F30D2B9665170079F230 /* DashboardVIewController.swift */,
-				A317B4BD2B9EAF6E0008F196 /* Score.swift */,
+				A3DD4C562BA03FE800FE23DF /* Models */,
 				A317B4CB2B9ED9D90008F196 /* ScoreCell.swift */,
 				A317B4C12B9EAFCC0008F196 /* ScoreboardViewController.swift */,
 				A306395C2B9E79A7005CF5F3 /* ReportViewController.swift */,
@@ -119,6 +119,14 @@
 				5B7517BC2AF039A000F8C387 /* Info.plist */,
 			);
 			path = Sireen;
+			sourceTree = "<group>";
+		};
+		A3DD4C562BA03FE800FE23DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A317B4BD2B9EAF6E0008F196 /* Score.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
