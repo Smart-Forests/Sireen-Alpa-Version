@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let circleFlag = false
 
@@ -25,6 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
 
+        addPins()
         if(circleFlag) {
             if let userLocation = locationManager.location?.coordinate {
                 let circle = MKCircle(center: userLocation, radius: 5000)
@@ -47,10 +48,51 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             guard let latestLocation = locations.first else { return }
             // Do something with the latest location, like centering the map
             let center = CLLocationCoordinate2D(latitude: latestLocation.coordinate.latitude, longitude: latestLocation.coordinate.longitude)
-            let region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+            let region = MKCoordinateRegion(center: center, latitudinalMeters: 1000, longitudinalMeters: 1000)
             mapView.setRegion(region, animated: true)
         }
     
+    func addPins() {
+        let sensorPin = MKPointAnnotation()
+        sensorPin.title = "sensor"
+        sensorPin.coordinate = CLLocationCoordinate2D(latitude: 25.76087, longitude: -80.37473)
+        mapView.addAnnotation(sensorPin)
+        
+        let firePin = MKPointAnnotation()
+        firePin.title = "fire"
+        firePin.coordinate = CLLocationCoordinate2D(latitude: 25.76087, longitude: -80.37575)
+        mapView.addAnnotation(firePin)
+    }
+}
+
+
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
+        
+        if annotationView == nil {
+            // CREATE VIEW
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
+        } else {
+            // Assign annotation
+            annotationView?.annotation = annotation
+        }
+        
+        // set custom annotation images
+        
+        switch annotation.title {
+            case "fire":
+                annotationView?.image = UIImage(named: "fireWarning")
+            case "sensor":
+                annotationView?.image = UIImage(named: "bluePin")
+            default:
+                break
+        }
+        
+        return annotationView
+        
+    }
     
 }
 
