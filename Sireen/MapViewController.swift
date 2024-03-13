@@ -52,57 +52,39 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func addPins() {
         let sensorPin = MKPointAnnotation()
         sensorPin.title = "sensor"
-        sensorPin.coordinate = CLLocationCoordinate2D(latitude: 25.76087, longitude: -80.37473)
+        sensorPin.coordinate = CLLocationCoordinate2D(latitude: 38.88293, longitude: -77.01641)
         mapView.addAnnotation(sensorPin)
         
         let firePin = MKPointAnnotation()
         firePin.title = "fire"
-        firePin.coordinate = CLLocationCoordinate2D(latitude: 25.76087, longitude: -80.37575)
+        firePin.coordinate = CLLocationCoordinate2D(latitude: 38.88298, longitude: -77.01254)
         mapView.addAnnotation(firePin)
     }
 }
 
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        // Check if the annotation is the user's location
-        if annotation is MKUserLocation {
-            // Attempt to dequeue an existing pin view first
-            var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: "UserLocation") as? MKPinAnnotationView
-            
-            if pinView == nil {
-                // If an existing pin view was not available, create one
-                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "UserLocation")
-                pinView?.pinTintColor = UIColor.green // Customize pin color
-                pinView?.canShowCallout = true // Optionally show a callout
-            } else {
-                pinView?.annotation = annotation
-            }
-            
-            return pinView
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
+        
+        if annotationView == nil {
+            // CREATE VIEW
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
         } else {
-            // Handle other annotations (fire, sensor)
-            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
-            
-            if annotationView == nil {
-                // CREATE VIEW
-                annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
-            } else {
-                // Assign annotation
-                annotationView?.annotation = annotation
-            }
-            
-            // Set custom annotation images based on the title
-            switch annotation.title {
+            // Assign annotation
+            annotationView?.annotation = annotation
+        }
+        
+        // Set custom annotation images
+        switch annotation.title {
             case "fire":
                 annotationView?.image = UIImage(named: "fireWarning")
             case "sensor":
                 annotationView?.image = UIImage(named: "bluePin")
             default:
                 break
-            }
-            
-            return annotationView
         }
+        
+        return annotationView
     }
 }
-
