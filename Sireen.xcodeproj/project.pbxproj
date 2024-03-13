@@ -367,11 +367,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NRAAPV7P7U;
+				DEVELOPMENT_TEAM = XN67YFQHL9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sireen/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app needs access to Bluetooth to find, connect to, and transfer data with nearby sensors.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses Bluetooth to connect to and exchange data with the sensor device.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "In order to take a photo to add to your post, we need to access your camera.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to have the most accurate reading for wildfire reporting";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For the most accurate wildfire reporting we must have your location";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos in order to add a photo to your feed.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -383,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.allanprieb.fiu.edu.SmartForests;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.naween.SmartForests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -400,11 +403,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NRAAPV7P7U;
+				DEVELOPMENT_TEAM = XN67YFQHL9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sireen/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app needs access to Bluetooth to find, connect to, and transfer data with nearby sensors.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses Bluetooth to connect to and exchange data with the sensor device.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "In order to take a photo to add to your post, we need to access your camera.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to have the most accurate reading for wildfire reporting";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For the most accurate wildfire reporting we must have your location";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos in order to add a photo to your feed.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -416,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.allanprieb.fiu.edu.SmartForests;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.naween.SmartForests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
