@@ -61,33 +61,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        let textTag = textField.tag
-//        let nextResponder = textField.superview?.superview?.viewWithTag(textTag)
-//        if(nextResponder != nil) {
-//            nextResponder?.becomeFirstResponder()
-//        } else {
-//            self.view.endEditing(true)
-//        }
-//    }
-//    
-//    extension UITextField {
-//        
-//        func addDoneToolbar(onDone: (target: Any, action: Selector)? = nil) {
-//            let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
-//            
-//            let toolbar: UIToolbar = UIToolbar()
-//            toolbar.barStyle = .default
-//            toolbar.items = {
-//                UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
-//                UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
-//                UIBarButtonItem(title: "Done", style: .done, target: onDone.target, action: onDone.action)
-//            }
-//            toolbar.sizeToFit()
-//            self.inputAccessoryView = toolbar
-//             
-//        }
-//    }
 
     private func showMissingFieldsAlert() {
         let alertController = UIAlertController(title: "Opps...", message: "We need all fields filled out in order to log you in.", preferredStyle: .alert)
