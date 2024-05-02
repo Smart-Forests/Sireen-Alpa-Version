@@ -849,6 +849,56 @@
             </objects>
             <point key="canvasLocation" x="2603.7209302325582" y="1672.5321888412018"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="UX3-vC-2Wo">
+            <objects>
+                <viewController id="gsL-Tr-zWR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLe-tc-You">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rqP-X7-1ZC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Q1t-Zp-CTg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QI0-Mp-bYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="3127"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ejh-9Z-Ogb">
+            <objects>
+                <viewController id="86m-xS-tgc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5bT-RM-XE6">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="w4F-hy-OSm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="map" catalog="system" id="fcI-vt-PM8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVf-hG-PHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="2430"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nLp-Q8-f4c">
+            <objects>
+                <tabBarController id="wPu-ZA-wMR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Xt-Kl-KJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="86m-xS-tgc" kind="relationship" relationship="viewControllers" id="2Xd-kQ-gGF"/>
+                        <segue destination="gsL-Tr-zWR" kind="relationship" relationship="viewControllers" id="LtZ-Fd-chn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXc-k3-oUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="2789"/>
+        </scene>
         <!--Report-->
         <scene sceneID="CeJ-wx-zTa">
             <objects>
@@ -1043,6 +1093,7 @@
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="104"/>
         <image name="exclamationmark.bubble" catalog="system" width="128" height="110"/>
         <image name="graduationcap" catalog="system" width="128" height="107"/>
+        <image name="map" catalog="system" width="128" height="112"/>
         <image name="mappin.and.ellipse" catalog="system" width="110" height="128"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
